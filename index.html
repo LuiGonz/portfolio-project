@@ -5,13 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Luis Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <header>
-            <div class="logo">
+            <!-- <div class="logo">
                 <img src="./img/logo-gray-wolf.png" alt="" width="40px">
-            </div>
+            </div> -->
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
                 <nav class="nav">
@@ -39,29 +40,31 @@
             <h2 class="section__title section__title--services">What I do</h2>
             <div class="services">
                 <article class="service">
-                    <h3>Developer</h3>
-                    <p class="service__paragragh">Shang-Chi, the master of unarmed weaponry-based Kung Fu, 
-                    is forced to confront his past after being drawn into the 
-                    Ten Rings organization. Shang-Chi, the master of unarmed weaponry-based Kung Fu, 
-                    is forced to confront his past after being drawn into the.</p>
+                    <h3>Web Developer</h3>
+                    <p class="service__paragragh">As a skilled web developer, I am capable of decreating, and designing websites
+                                                  for your company. I have experience working alongside teams of other developers 
+                                                  in intaining, and have worked indpendently to build websites.
+                    </p>
+                    <p class="service__paragragh">I am proficient in JavaScript, HTML, CSS, and have solid knowledge and experience
+                                                  in programming applications. <br/>I believe I will succeed in your Web Developer role
+                    </p>
                 </article>
 
-                <article class="service">
+                <!-- <article class="service">
                     <h3>E-Commerce</h3>
                     <p class="service__paragragh">After saving the life of their heir apparent, tenacious loner 
                     Snake Eyes is welcomed into an ancient Japanese clan called the 
                     Arashikage where he is taught the ways of the ninja warrior. Shang-Chi, the master of unarmed weaponry-based Kung Fu, 
                     is forced to confront his past after being drawn into the 
                     Ten Rings organization. </p>
-                </article>
+                </article> -->
 
                 <article class="service">
-                    <h3>WordPress</h3>
-                    <p class="service__paragragh">The killer known as Holiday continues to stalk the Falcone crime family 
-                    while a new class of costumed criminal rises in Gotham City. Batman suspects 
-                    that a former ally might be the serial killer. The killer known as Holiday continues to stalk the Falcone crime family 
-                    while a new class of costumed criminal rises in Gotham City. Batman suspects 
-                    that a former ally might be the serial killer.</p>
+                    <h3>Web Designer</h3>
+                    <p class="service__paragragh">As a Web designers, my creative and software programming skills  allow me to design, 
+                                                  build, and improve websites. I understand user experience and capable of build websites 
+                                                  that are easy to understand, navigate, and use, and adhere to design standards and specifications. 
+                    </p>
                 </article>
             </div>
             <a href="#work" id="work-button">My Work</a>
@@ -74,14 +77,18 @@
             <p class="section__subtitle section__subtitle--about">Developer</p>
 
             <div class="about-me__body">
-               <p>An epic fantasy adventure based on the timeless Arthurian legend, "The Green Knight" 
-               tells the story of Sir Gawain (Dev Patel), King Arthur's reckless and headstrong nephew, 
-               who embarks on a daring quest to confront the eponymous Green Knight, a gigantic emerald-skinned 
-               stranger and tester of men. Gawain contends with ghosts, giants, thieves, and schemers in what 
-               becomes a deeper journey to define his character and prove his worth in the eyes of his family 
-               and kingdom by facing the ultimate challenger. From visionary filmmaker David Lowery comes a 
-               fresh and bold spin on a classic tale from the knights of the round table.</p>
-               <p></p>
+                <p>Motivated and passion-driven Front End Web Developer with a Full Stack Web Development 
+                   Certificate from the University of Pennsylvania acquired Feburary 2022.
+                </p>
+                <p>Ability to design, build, and maintain websites from conception to production. 
+                   Confident working in a fast-paced and diverse team environment developing solutions and exceeding expectations.
+                   I enjoy the challenges that come with learning new languages and programs along with 
+                   mountain biking, camping, traveling, and fitness.
+                </p>
+                <p>Experience in both frontend and backend programs utilizing languages and programs such as JavaScript, 
+                   Node.js, Express, MySQL, Sequelize, Rect, MongoDB, Mongoose, HTML, CSS, and third party CSS packages 
+                   along with strong communication, collaboration, analytical skills, and problem-solving.
+                </p>
             </div>
             <img src="./img/developer-image.jpg" alt="my photo" class="about-me__img">
         </section>
@@ -90,24 +97,26 @@
 
         <section class="my-work" id="work">
             <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            <p class="section__subtitle section__subtitle--work">Password Generator</p>
             <section class="portfolio__container">
                 <div class="portfolio__child-1">
                     <!-- portfolio item 1 -->
                     <a href="#" class="portfolio__item">
-                        <img src="./img/blue-background.jpg" alt="" class="portfolio__img--top">
+                        <img src="./img/blue-background.jpg" alt="" class="portfolio__img">
                     </a>
                 </div>
                 <div class="portfolio__child-2">
                     <!-- portfolio item 2 -->
-                    <a href="#" class="portfolio__item">
-                        <img src="./img/laptop-2a.webp" alt="" class="portfolio__img--left">
+                    <h3 class="">Refactoring Project</h3>
+                    <a href="https://luigonz.github.io/refactoring_html_project/" class="portfolio__item">
+                        <img src="./img/laptop-2a.webp" alt="" class="portfolio__img">
                     </a>
                 </div>
                 <div class="portfolio__child-3">
                     <!-- portfolio item 3 -->
-                    <a href="#" class="portfolio__item">
-                        <img src="./img/laptop-2.png" alt="" class="portfolio__img--right">
+                    <h3 class="">Password Generator</h3>
+                    <a href="https://luigonz.github.io/password_generator/" class="portfolio__item">
+                        <img src="./img/laptop-2.png" alt="" class="portfolio__img">
                     </a>
                 </div>
             </section>
@@ -115,14 +124,21 @@
 
         <!-- Footer -->
 
-        <footer>
-            <a href="mailto:myrmecodia.lg@gmail.com" class="footer__link">myrmecodia.lg@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item"><a class="social-list__link" href="https://www.google.com">a</a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://www.google.com">b</a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://www.google.com">c</a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://www.google.com">d</a></li>
-            </ul>
+        <footer class="social-media">
+            <li class="social-list">
+                <ul class="email">
+                    <a href="mailto:myrmecodia.lg@gmail.com" class="footer__link">myrmecodia.lg@gmail.com</a>
+                </ul>
+                <ul class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/LuiGonz"><i class="fa fa-github"></i></a>
+                </ul>
+                <ul class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/lugonzales/"><i class="fa fa-linkedin-square"></i></a>
+                </ul>
+                <ul class="social-list__item">
+                    <a class="social-list__link" href="https://upenn.bootcampcontent.com/LuiGonz"><i class="fa fa-gitlab"></i></a>
+                </ul>
+            </li>
         </footer>
     </body>
 </html>

@@ -53,8 +53,6 @@ img {
 #work-button:focus {
     background: var(--clr-light);
     color: var(--clr-dark);
-    /* outline: 3px solid var(--clr-accent);
-    outline-offset: 3px; */
 }
 
 
@@ -111,7 +109,7 @@ h3 {
 .section__subtitle--work {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 /* header */
@@ -139,7 +137,6 @@ nav {
     background-image: url(../img/laptop-4.jpg);
     background-size: cover;
     background-blend-mode: multiply;
-    /* color: var(--clr-light); */
     text-align: center;
     margin: 2em auto;
     padding-bottom: 4em;
@@ -161,17 +158,21 @@ nav {
 }
 
 .services {
+    display: inline-flex;
+    justify-content: center;
     margin-bottom: 4em;
+
 }
 
 .service {
     max-width: 500px;
+    margin-right: 4em;
     margin: 0 auto;
 }
 
 .service__paragragh {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     color: var(--clr-light);
     font-weight: var(--fw-reg);
     text-align: left;
@@ -203,6 +204,8 @@ nav {
 .portfolio__container {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
 .portfolio__child-1 {
@@ -216,10 +219,69 @@ nav {
 }
 
 .portfolio__child-2:nth-of-type(2) {
-    margin-right: 0.5em;
+    margin-right: 0.799em;
     margin-bottom: 1em;
 }
 
+.portfolio__img {
+    box-shadow: var(--bs);
+    border-radius: 1em;    
+}
+
+.portfolio__img:hover {
+    transition: 
+        transform 750ms cubic-bezier(1, 1, 2, 2),
+        opacity 250ms linear ;
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+
+/* Footer */
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-list {
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.social-list__item {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.email {
+    padding-left: 0px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--clr-dark);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+}
+
+.fa-github,
+.fa-linkedin-square,
+.fa-gitlab {
+    font-size:48px;
+    color: var(--clr-accent);
+}
+
+.fa-github:hover,
+.fa-linkedin-square:hover,
+.fa-gitlab:hover {
+    transition: 
+        transform 750ms cubic-bezier(1, 1, 2, 2),
+        opacity 250ms linear ;
+    transform: scale(1.1);
+    opacity: 0.7;
+}
 
 /* Custom Properties */
 /* font-family: 'Roboto', sans-serif; */
@@ -232,7 +294,7 @@ nav {
 
     --clr-light: #D5E9EA;
     --clr-dark: #383838;
-    --clr-accent: #298689;
+    --clr-accent: #1473df;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -332,18 +394,19 @@ nav {
     }
 }
 
-@media (max-width: 717px) {
+@media (max-width: 1078px) {
     .portfolio__child-1 {
-        flex: 0 1 100%;  /* flex-grow, flex-shrink, flex-basis */
-        margin-bottom: 0.25em;
+        flex: 0 1 200%;  /* flex-grow, flex-shrink, flex-basis */
+        margin-bottom: 1.5em;
     }
     
     .portfolio__child-2:nth-of-type(2),
     .portfolio__child-3:nth-of-type(3) {
-        flex-basis: 100%;
+        flex-basis: 200%;
+        margin-bottom: 1.5em;
     }
     
     .portfolio__child-2:nth-of-type(2) {
-        margin-bottom: 0.5em;
+        margin-bottom: 1.5em;
     }
 }
