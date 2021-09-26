@@ -112,16 +112,66 @@ h3 {
     margin-bottom: 0.5em;
 }
 
-/* header */
+/* header - navbar */
 
-nav {
-    display:inline-block;
+body {
+    margin: 0;
+    font-family: var(--ff-primary);
 }
+  
+.topnav {
+    overflow: hidden;
+    background-color: var(--clr-dark);
+    margin-bottom: 3em;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+  
+.topnav a {
+    float: right;
+    color: var(--clr-light);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.topnav a:hover {
+    background-color: var(--clr-accent);
+    color: var(--clr-dark);
+}
+
+/* .nav-toggle {
+    background-color: var(--clr-dark);
+}
+
+li {
+    float: right;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 9px;
+    text-decoration: none;
+}
+.nav__list {
+    list-style-type: none;
+} */
 
 /* intro section */
 
+#home {
+    margin-top: 6em;
+}
+
 .intro {
     position: relative;
+    
 }
 
 .intro__img {
@@ -315,6 +365,15 @@ nav {
         --fs-body: 1.125rem;
     }
 }
+
+/* @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+} */
 
 @media (min-width: 900px){
     .services {
