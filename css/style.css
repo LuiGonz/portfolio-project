@@ -15,6 +15,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    width: 100%;
 }
 
 section, footer {
@@ -27,12 +28,17 @@ img {
     border-radius: 1em;
 }
 
+.section-body {
+    margin-top: 0em;
+}
 
-
-/* button */
+.work-button-container {
+    display: flex;
+    justify-content: center;
+}
 
 #work-button {
-    display: inline-block;
+    /* display: inline-block; */
     padding: .5em 1.5em;
     background: var(--clr-accent);
     color: var(--clr-light);
@@ -44,6 +50,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: transform 200ms ease-in-out;
+    width: 124px;
 }
 
 #work-button:hover {
@@ -74,6 +81,11 @@ h2 {
 h3 {
     font-size: var(--fs-h3);
     color: var(--clr-accent);
+}
+
+.web-developer-title,
+.web-Designer-title {
+    font-weight: bold;
 }
 
 .section__title {
@@ -118,8 +130,14 @@ h3 {
 
 /* header - navbar */
 
+/* #navbarBasicExample {
+    height: 300px;
+} */
+
+
 .navbar {
     padding: 0;
+    width: 100%;
 }
 
 .navbar-link {
@@ -139,8 +157,20 @@ h3 {
 
 .navbar-menu {
     background-color: var(--clr-dark);
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
+}
+
+/* .navbar-link,
+.navbar-dropdown {
+    display: flex;
+} */
+
+.navbar-link,
+/* .has-dropdown, */
+.navbar-item {
+    display: inline-flex;
+    align-items: flex-start;
 }
   
 /* intro section */
@@ -162,7 +192,8 @@ h3 {
 /* services section */
 
 .my-services {
-    display: block;
+    display: inline-block;
+    /* flex-direction: column; */
     background-color: var(--clr-dark);
     background-image: url(../img/laptop-4.jpg);
     background-size: cover;
@@ -174,6 +205,7 @@ h3 {
 
 .section__title--services {
     color: var(--clr-light);
+    font-size: var(--fs-h1);
     position: relative;
 }
 
@@ -191,22 +223,31 @@ h3 {
     display: inline-flex;
     justify-content: center;
     margin-bottom: 4em;
-
+    column-gap: 1em;
 }
 
-.service {
+.services-left {
+    width: 100%;
+}
+
+.services-right {
+    width: 100%;
+}
+
+/* .service {
     max-width: 500px;
     margin-right: 4em;
     margin: 0 auto;
-}
+} */
 
-.service__paragragh {
+.service__paragraph {
     display: flex;
     justify-content: center;
     color: var(--clr-light);
     font-weight: var(--fw-reg);
     text-align: left;
     margin-bottom: 0px;
+    margin-top: 1em;
 }
 
 /* about me */
@@ -218,6 +259,10 @@ h3 {
 
 .about-me__img {
     box-shadow: 0.5em 0.5em .5em rgba(0, 0, 0, 0.781);
+}
+
+.developer-img {
+    width: 100%;
 }
 
 /* My Work */
@@ -302,6 +347,13 @@ footer {
     font-weight: var(--fw-bold);
 }
 
+.resume-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
 .fa-github,
 .fa-linkedin-square,
 .fa-gitlab {
@@ -343,22 +395,29 @@ footer {
          0.12rem 0.125em 0.25em rgba(0,0,0,0.15);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
+
+    .my-services {
+        padding: 40px;
+    }
+
     .services {
         display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
+        flex-direction: column;
+        align-content: space-around;
+        /* max-width: 1000px; */
+        /* margin-left: auto;
+        margin-right: auto; */
     }
-    
-    .service + .service {
-        margin-left: 2em;
+
+    .services-right {
+        margin-top: 2em;
     }
 }
 
@@ -377,7 +436,7 @@ footer {
     }
     .intro__img {
         grid-area: img;
-        min-width: 198px;
+        min-width: 200px;
         position: relative;
         z-index: 2;
     }
@@ -388,7 +447,7 @@ footer {
         text-align: right;
         position: relative;
         left: -1.5em;
-        width: calc(100% + 1.5em);
+        width: calc(120%);
     }
 
     .about-me {
