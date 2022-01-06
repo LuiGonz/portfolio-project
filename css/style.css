@@ -289,11 +289,14 @@ h3 {
 }
 
 .portfolio__child-2:nth-of-type(2),
-.portfolio__child-3:nth-of-type(3) {
+.portfolio__child-3:nth-of-type(3),
+.portfolio__child-4:nth-of-type(4),
+.portfolio__child-5:nth-of-type(5) {
     flex-basis: 49%;
 }
 
-.portfolio__child-2:nth-of-type(2) {
+.portfolio__child-2:nth-of-type(2),
+.portfolio__child-4:nth-of-type(4) {
     margin-right: 0.799em;
     margin-bottom: 1em;
 }
@@ -481,19 +484,39 @@ footer {
     }
 }
 
-@media screen and (max-width: 1078px) {
+@media screen and (max-width: 1118px) {
     .portfolio__child-1 {
         flex: 0 1 200%;  /* flex-grow, flex-shrink, flex-basis */
         margin-bottom: 1.5em;
     }
     
     .portfolio__child-2:nth-of-type(2),
-    .portfolio__child-3:nth-of-type(3) {
+    .portfolio__child-3:nth-of-type(3),
+    .portfolio__child-4:nth-of-type(4),
+    .portfolio__child-5:nth-of-type(5) {
         flex-basis: 200%;
+        margin-bottom: 1.5em;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .portfolio__child-1 {
+        flex: 0 1 200%;
         margin-bottom: 1.5em;
     }
     
-    .portfolio__child-2:nth-of-type(2) {
+    .portfolio__child-2:nth-of-type(2),
+    .portfolio__child-3:nth-of-type(3),
+    .portfolio__child-4:nth-of-type(4),
+    .portfolio__child-5:nth-of-type(5) {
+        flex-basis: 200%;
         margin-bottom: 1.5em;
+        margin-right: 0;
+    }
+
+    .my-work {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
